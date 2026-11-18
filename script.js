@@ -24,6 +24,15 @@ addButton.addEventListener("click", function () {
   taskInput.focus();
 });
 
+// "Clear completed" removes every task marked as done
+const clearDoneButton = document.getElementById("clear-done-button");
+clearDoneButton.addEventListener("click", function () {
+  const doneItems = taskList.querySelectorAll("li.done");
+  doneItems.forEach(function (item) {
+    item.remove();
+  });
+});
+
 // Pressing Enter in the text box works like clicking "Add"
 taskInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
