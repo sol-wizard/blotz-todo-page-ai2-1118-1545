@@ -1,0 +1,36 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 48px 16px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 420px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#task-list {
+  width: 100%;
+  max-width: 420px;
+  padding: 0;
+  margin-top: 20px;
+}
