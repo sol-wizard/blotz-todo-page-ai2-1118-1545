@@ -12,6 +12,12 @@ addButton.addEventListener("click", function () {
 
   const item = document.createElement("li");
   item.textContent = text;
+
+  // Clicking a task marks it as done (click again to undo)
+  item.addEventListener("click", function () {
+    item.classList.toggle("done");
+  });
+
   taskList.appendChild(item);
 
   taskInput.value = "";
